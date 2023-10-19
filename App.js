@@ -1,14 +1,10 @@
-import { StyleSheet } from 'react-native'
-import React from 'react'
-import { PaperProvider } from 'react-native-paper'
-import Router from './src/routes/Router'
+import { PaperProvider } from "react-native-paper";
+import DrawerRouter from './src/routes/DrawerRouter';
 
 export default function App() {
   return (
     <PaperProvider>
-      <Router />
+      <DrawerRouter></DrawerRouter>
     </PaperProvider>
-  )
+  );
 }
-
-const styles = StyleSheet.create({})
